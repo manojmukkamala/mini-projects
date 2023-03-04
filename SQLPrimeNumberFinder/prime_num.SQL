@@ -1,0 +1,24 @@
+DECLARE @N INT, @P INT
+DECLARE @DUMMY TABLE (Num INT NULL, NotPrimeNum INT NULL)
+SET @P = 1000
+
+WHILE @P > 1
+	BEGIN
+		INSERT INTO @DUMMY(Num) VALUES (@P)
+		SET @N = @P
+		WHILE @N > 1
+			BEGIN
+				IF (@P%@N = 0 AND @P <> @N)
+					BEGIN
+						INSERT INTO @DUMMY(NotPrimeNum) VALUES (@P)
+						BREAK
+					END
+				SET @N = @N - 1
+			END
+		SET @P = @P - 1
+	END
+
+SELECT Num AS PrimeNumbers
+FROM @DUMMY 
+WHERE Num NOT IN(SELECT A.Num FROM @DUMMY A INNER JOIN @DUMMY B ON A.Num = B.NotPrimeNum)
+ORDER BY PrimeNumbers
