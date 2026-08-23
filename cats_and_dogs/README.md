@@ -3,13 +3,18 @@
 Cat-vs-dog CNN exercise (2020) on the **Oxford-IIIT Pet Dataset**
 (Parkhi et al., CVPR 2012, "Cats and Dogs" — 37 breeds, ~200 images per
 class; here only the `Cat/` and `Dog/` folders are used, resized to
-100×100 grayscale). Three entry points, all training a small
+100×100 grayscale). Four entry points, all training a small
 2-convolution keras model (binary cross-entropy, sigmoid head):
 
 - `test.py` — the plain script. Loads `X.pickle`/`y.pickle`, trains on
   the first 2048 samples, batch 32, 3 epochs. The image-scanning /
   pickle-writing half is present but **commented out** (the pickles
   already existed when this was run).
+- `catsdogs.py` — the same script with the image-scanning /
+  pickle-writing block **enabled**: rebuilds `X.pickle`/`y.pickle`
+  from the images and trains on the full set (the "regeneration" half
+  that is commented out in `test.py`). Its `DATADIR` points at an
+  older machine's checkout — repoint it before running.
 - `CatsAndDogs.ipynb` — two sections: a **PyTorch** attempt (data
   builder class, tensor setup, one sample visualized) and the
   **TensorFlow** version of the same CNN, trained 10 epochs.
@@ -53,17 +58,20 @@ index page <https://www.robots.ox.ac.uk/~vgg/data/pets/>:
   <https://thor.robots.ox.ac.uk/~vgg/data/pets/annotations.tar.gz>
   (ground truth).
 
-To regenerate `X.pickle`/`y.pickle` from the images, run the
-image-scanning block with `DATADIR` set: it's the `##`-commented
-section at the top of `test.py`, a standalone cell in the TF section
-of `CatsAndDogs.ipynb`, or the `DogsVSCats` builder class in
-`VGG16.ipynb` (224px variant).
+The simplest is `catsdogs.py` with its `DATADIR` pointed at your
+`PetImages` folder (the block is already enabled). Alternatively,
+run the image-scanning block with `DATADIR` set: it's the
+`##`-commented section at the top of `test.py`, a standalone cell in
+the TF section of `CatsAndDogs.ipynb`, or the `DogsVSCats` builder
+class in `VGG16.ipynb` (224px variant).
 
 ## Notes
 
 - **Stale paths (documented, not fixed):** the notebooks point at old
-  Colab mounts (`/content/drive/My Drive/CatsAndDogs/PetImages/…`) and
+  Colab mounts (`/content/drive/My Drive/CatsAndDogs/PetImages/…`),
   `test.py` at a previous local checkout
-  (`/Users/Manoj/Downloads/CatsAndDogs/PetImages`). Nothing in the
-  repo depends on either — point them at your extracted `PetImages`
-  directory.
+  (`/Users/Manoj/Downloads/CatsAndDogs/PetImages`), and `catsdogs.py`
+  at an even older machine's checkout
+  (`/Users/shz204/Downloads/CatsAndDogs/PetImages`). Nothing in the
+  repo depends on any of these — point them at your extracted
+  `PetImages` directory.
