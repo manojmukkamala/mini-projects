@@ -1,0 +1,12 @@
+[project]
+name = "computer_vision"
+version = "0.1.0"
+description = "OpenCV + Jupyter computer-vision experiments"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyterlab",
+    "matplotlib",
+    "numpy",
+    "opencv-python",
+    "pandas",
+]
