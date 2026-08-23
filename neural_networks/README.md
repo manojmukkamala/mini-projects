@@ -33,8 +33,7 @@ Notebook outputs are cleared; rerun cells to regenerate them.
 
 ## Reference
 
-The code for Michael Nielsen's *Neural Networks and Deep Learning*
-book, which this coursework was done alongside, is kept in the local
-Nextcloud copy (`neural-networks-and-deep-learning-master/`) and is
-not in this repo. Its MNIST dataset re-downloads from
-<http://neuralnetworksanddeeplearning.com> (`data/mnist.pkl.gz`).
+This coursework was done alongside Michael Nielsen's *Neural Networks
+and Deep Learning* book. Its code (and the MNIST dataset, `data/mnist.pkl.gz`)
+lives in the upstream repo, re-clonable on demand:
+`git clone https://github.com/mnielsen/neural-networks-and-deep-learning`.
