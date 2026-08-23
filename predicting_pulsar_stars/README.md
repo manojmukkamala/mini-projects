@@ -58,3 +58,7 @@ reporting ~97.8% test accuracy.
 
 The dataset is public: <https://www.kaggle.com/pavanraj159/predicting-a-pulsar-star>.
 
+
+---
+
+*Original work: 2018-08 (first committed to GitHub 2018-08-06).*
