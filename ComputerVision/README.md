@@ -1,3 +1,0 @@
-# ComputerVision
-
-Work in Progress!
