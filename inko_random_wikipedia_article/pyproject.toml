@@ -1,0 +1,20 @@
+[project]
+name = "inko-random-wikipedia-article"
+version = "0.1"
+contact = "info@user.com"
+dependencies = [
+    "httpx[http2]>=0.28.1",
+    "rich>=14.0.0",
+]
+
+[project.scripts]
+inko-random-wikipedia-article = "inko_random_wikipedia_article:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
