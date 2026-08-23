@@ -29,3 +29,4 @@ __pycache__/
 *.tar.gz
 *.tgz
 *.zip
+CLEANUP_PLAN.md
