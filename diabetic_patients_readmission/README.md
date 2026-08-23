@@ -27,3 +27,7 @@ Splitted the data into training and test sets and declared the reference value f
 Using the training set, a sample was picked and logistic regression model was implemented.
 
 Using the test set, predictions were made. Computed the accuracy of the model and built ROC curve.
+
+---
+
+*Original work: 2017-11 (first committed to GitHub 2017-11-07).*
