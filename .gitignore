@@ -9,6 +9,9 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
+# Local MQTT broker/Wi-Fi credentials (see esp32_mqtt)
+config.py
+
 # macOS
 .DS_Store
 
