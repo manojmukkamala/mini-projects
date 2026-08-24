@@ -18,6 +18,7 @@ repo.
 | `diabetic_patients_readmission` | Predicting hospital readmission for diabetic patients from patient attributes | Python, notebook |
 | `esp32_examples` | Small ESP32 hardware experiments: 12 V fan toggle and HC-SR04 ultrasonic distance reads | MicroPython, runs on the ESP32 |
 | `esp32_mqtt` | MQTT smoke-test tools: PC-side paho scripts + ESP32 umqtt script, TLS via Traefik | Python, MicroPython |
+| `esp32_whistle_counter` | KY-037 whistle counter that publishes the running total to an MQTT broker over the LAN | MicroPython, runs on the ESP32 |
 | `excel_cell_name_finder` | Convert an Excel cell number to its column letter (e.g. 16384 → XFD) | Python, stdlib |
 | `h1b_salary_analysis` | Salary survey for data-engineer roles from the DOL's public H-1B LCA disclosures | Python, notebook |
 | `hhgtg` | NLP pipeline (tokenize → POS → frequency → TF-IDF → KMeans) over the five-book *Hitchhiker's Guide* series (corpus kept locally, copyrighted) | Python, notebook |
