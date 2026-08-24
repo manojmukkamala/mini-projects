@@ -1,0 +1,13 @@
+[project]
+name = "roi-simulation"
+version = "0.1.0"
+description = "Simulates investing 10% of the US average wage into VFINX and visualizes the results"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "plotly",
+    "streamlit",
+    "yfinance",
+    "beautifulsoup4",
+    "curl_cffi",
+]

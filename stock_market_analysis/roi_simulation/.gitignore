@@ -1,0 +1,4 @@
+# Derived pipeline outputs — regenerate with `python analyze.py`
+data/final_df.csv
+data/timing_sim.csv
+data/timing_sim_random.csv
