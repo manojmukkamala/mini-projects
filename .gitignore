@@ -30,3 +30,4 @@ __pycache__/
 *.tgz
 *.zip
 CLEANUP_PLAN.md
+CLEANUP_ARCHIVE.md
