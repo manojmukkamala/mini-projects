@@ -40,6 +40,3 @@ standalone; nothing depends on anything else at the top level.
 - Personal repo: work on `main` directly by default; use branches
   when a change is big or experimental.
 - Never delete a project folder without explicit confirmation.
-- Working copies live locally in
-  `~/Nextcloud/Documents/Work/Personal/projects/` (same snake_case
-  names); keep the two in sync when a project changes.
