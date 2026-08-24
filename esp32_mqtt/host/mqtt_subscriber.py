@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-MQTT subscriber that tails the Smart Kettle's Home Assistant discovery
-topic and pretty-prints incoming JSON.
+MQTT subscriber that tails a device's Home Assistant discovery topic
+and pretty-prints incoming JSON.
 
-Broker/credentials come from config.py (copy config.example.py and fill it in).
+Broker/credentials/topic come from config.py (copy config.example.py and fill it in).
 """
 
 import paho.mqtt.client as mqtt
@@ -12,8 +12,6 @@ import sys
 import time
 
 import config
-
-TOPIC = "homeassistant/sensor/smart_kettle_temperature/config"
 
 
 class MQTTSubscriber:
@@ -32,8 +30,8 @@ class MQTTSubscriber:
             print(f"connection failed: {reason_code}")
             sys.exit(1)
         print(f"connected to {self.broker}:{self.port}")
-        client.subscribe(TOPIC)
-        print(f"subscribed to {TOPIC}")
+        client.subscribe(config.TOPIC)
+        print(f"subscribed to {config.TOPIC}")
 
     def on_disconnect(self, client, userdata, flags, reason_code, properties):
         print(f"disconnected: {reason_code}")

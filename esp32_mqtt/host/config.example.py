@@ -13,3 +13,7 @@ BROKER = ""            # e.g. the TLS entrypoint hostname
 PORT = 8883            # MQTT over TLS
 USERNAME = ""
 PASSWORD = ""
+
+# --- Subscriber topic (mqtt_subscriber.py) ---
+# HA MQTT discovery config topic, e.g. "homeassistant/sensor/<object_id>/config"
+TOPIC = ""

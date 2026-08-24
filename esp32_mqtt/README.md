@@ -13,7 +13,7 @@ the Traefik entrypoint.
 | file | what it does |
 |---|---|
 | `mqtt_list_topics.py` | Subscribes to `#` and lists every topic observed in a 3 s window (`python mqtt_list_topics.py <broker>`) |
-| `mqtt_subscriber.py` | Tails the smart-kettle HA discovery topic and pretty-prints the JSON |
+| `mqtt_subscriber.py` | Tails a device's HA MQTT discovery topic (set in `config.py`) and pretty-prints the JSON |
 | `config.example.py` | Template — copy to `config.py` and fill in broker creds |
 
 ## device/
