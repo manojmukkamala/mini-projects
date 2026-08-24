@@ -16,6 +16,7 @@ repo.
 | `computer_vision` | OpenCV experiments: lane detection and practice notebooks (video demos) | Python, OpenCV |
 | `death_rates` | Multivariate linear regression on US state death rates (coursework) | MATLAB |
 | `diabetic_patients_readmission` | Predicting hospital readmission for diabetic patients from patient attributes | Python, notebook |
+| `esp32_examples` | Small ESP32 hardware experiments: 12 V fan toggle and HC-SR04 ultrasonic distance reads | MicroPython, runs on the ESP32 |
 | `excel_cell_name_finder` | Convert an Excel cell number to its column letter (e.g. 16384 → XFD) | Python, stdlib |
 | `h1b_salary_analysis` | Salary survey for data-engineer roles from the DOL's public H-1B LCA disclosures | Python, notebook |
 | `hhgtg` | NLP pipeline (tokenize → POS → frequency → TF-IDF → KMeans) over the five-book *Hitchhiker's Guide* series (corpus kept locally, copyrighted) | Python, notebook |
