@@ -30,6 +30,7 @@ repo.
 | `predicting_pulsar_stars` | Identifying pulsar stars with a neural network on radio-telescope data | Python, notebook |
 | `prime_number_finder` | Finding prime numbers up to N in T-SQL | SQL |
 | `raspberrypi_examples` | Small Raspberry Pi hardware experiments (GPIO, camera) + a Pi provisioning script | Python/shell, runs on the Pi |
+| `raspberrypi_spark_cluster` | Multi-node Spark 4.1.2 cluster on Raspberry Pis via Docker Compose (master/workers, Unity Catalog, RustFS) + a test job | Python, Docker |
 | `second_most_word` | Find the second-most-repeated word in a paragraph (ties included) | Python, stdlib |
 | `sqlparse` | Extract table names referenced in a SQL query (a tokenizing sketch) | Python, stdlib |
 | `smart_kettle` | ESP32 kettle: MLX90614 temperature + HX711 load-cell level to an OLED and Home Assistant over MQTT | MicroPython, runs on the ESP32 |
