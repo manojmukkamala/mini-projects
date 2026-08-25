@@ -4,9 +4,6 @@ Setup guide for a multi-node Apache Spark 4.1.2 cluster on Raspberry Pis,
 deployed with Docker Compose — plus a test job to verify distribution
 across workers.
 
-Moved from the `lakehouse-playground` repo
-(`spark-cluster/rpi_spark_cluster`), where it lived as scratch setup notes.
-
 | file | what it does |
 |---|---|
 | `setup.md` | End-to-end guide: Docker install, Spark master + workers, Unity Catalog, RustFS object storage, test + troubleshooting |
