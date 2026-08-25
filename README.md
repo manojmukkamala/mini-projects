@@ -32,6 +32,7 @@ repo.
 | `raspberrypi_examples` | Small Raspberry Pi hardware experiments (GPIO, camera) + a Pi provisioning script | Python/shell, runs on the Pi |
 | `second_most_word` | Find the second-most-repeated word in a paragraph (ties included) | Python, stdlib |
 | `sqlparse` | Extract table names referenced in a SQL query (a tokenizing sketch) | Python, stdlib |
+| `smart_kettle` | ESP32 kettle: MLX90614 temperature + HX711 load-cell level to an OLED and Home Assistant over MQTT | MicroPython, runs on the ESP32 |
 | `stock_market_analysis` | Two market-analysis notebooks + a VFINX ROI-simulation subproject with a Streamlit dashboard | Python, notebook, Streamlit |
 | `text_analytics` | Spam/ham SMS classification and a topic-modelling look (coursework) | R |
 | `time_series_analysis` | Practice notebook on the classic Airline Passengers time series (1949–1960) | Python, notebook |
