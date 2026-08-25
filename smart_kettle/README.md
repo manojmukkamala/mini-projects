@@ -13,7 +13,7 @@ and publishes them over MQTT (TLS) for Home Assistant.
 | file | what it does |
 |---|---|
 | `main.py` | Entry point — WDT, sensor reads, OLED display, change-detected MQTT publishes, 1-hour reboot |
-| `config.py` | WiFi/MQTT creds + topics — gitignored, fill it in before flashing |
+| `config.py` | WiFi/MQTT creds + topics — gitignored; copy `config.example.py` and fill it in |
 | `utils/sensor_drivers.py` | Inline MLX90614 (I2C) and HX711 (24-bit load cell) drivers |
 | `utils/display.py` | OLED setup (SH1106/SSD1306 auto-detect) + display helpers |
 | `utils/mqtt_wifi.py` | WiFi + MQTT (TLS) connect/ping/close helpers |
@@ -24,7 +24,8 @@ and publishes them over MQTT (TLS) for Home Assistant.
 
 Device:
 
-1. Fill in `app/config.py` (WiFi, MQTT creds, topics).
+1. `cp app/config.example.py app/config.py` and fill it in
+   (WiFi, MQTT creds, topics).
 2. Flash the `app/` package plus `weight_calibration.txt` to the flash
    root, e.g.:
 
