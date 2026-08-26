@@ -32,5 +32,6 @@ config.py
 *.tar.gz
 *.tgz
 *.zip
-CLEANUP_PLAN.md
-CLEANUP_ARCHIVE.md
+
+# Untracked projects
+databricks-ai-test/
