@@ -3,7 +3,7 @@
 Guidance for AI agents (and humans) working in this repo.
 
 ## What this repo is
-A collection of small personal projects, experiments, and coursework —
+A collection of small personal projects, experiments —
 mostly Python, plus some R, SQL, and MATLAB. Projects are fully
 standalone; nothing depends on anything else at the top level.
 
