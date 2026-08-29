@@ -1,0 +1,12 @@
+[project]
+name = "job-application-tracker"
+version = "0.1.0"
+description = "Extract company name and job title from job application emails (Thunderbird local folder or IMAP) via an LLM, into a CSV."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "openai>=1.40",
+    "plotly>=7.0.0",
+    "python-dotenv>=1.0",
+    "streamlit>=1.50.0",
+]
